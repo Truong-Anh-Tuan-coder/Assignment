@@ -62,7 +62,7 @@ public class Course {
                         System.out.print(c.getCourseID()+ "\t\t");
                         System.out.print(c.getCourseName()+"\t\t");
                         System.out.println(s.getStudentName()+ "\t\t");
-                    }else if(s.getCourseName() != c.getCourseName() && c.getSTT() == STT ){
+                    }else {
                         if(s.getCourseName().isEmpty()){
 
 

@@ -10,7 +10,7 @@ import java.util.*;
 public class Main {
     public static Scanner scanner =new Scanner(System.in);
     public static int choice;
-    static ArrayList<Student> students;
+    static ArrayList<Student> students; // tại sao dùng static class.
     static ArrayList<Course> courses;
     static Course course;
     static Student student;
@@ -21,7 +21,6 @@ public class Main {
         addSampleData();
         course= new Course(courses,students);
         student = new Student(students);
-
         do {
             System.out.println("====Classroom management program====");
             System.out.println("1. Management course");
@@ -47,12 +46,8 @@ public class Main {
             System.out.print("Input your choice: ");
             choice = scanner.nextInt();
             switch (choice) {
-                case 1:
-                    FunctionInCourseMenu();
-                    break;
-                case 2:
-                    choice = -1;
-                    break;
+                case 1: FunctionInCourseMenu(); break;
+                case 2: choice = -1; break;
                 default:
                     System.out.println("Invalid choice");
             }
